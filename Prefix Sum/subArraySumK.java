@@ -13,7 +13,7 @@ public class subArraySumK {
         for(int i=0; i<arr.length; i++){
             prefixSum += arr[i];
 
-            int diff = prefixSum - k;
+            int diff = prefixSum - k; // any overlaps in between
             if(diffMap.containsKey(diff)){
                 subArrays += diffMap.get(diff);
             }
